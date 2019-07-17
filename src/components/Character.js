@@ -1,7 +1,10 @@
 import React from "react";
+import {connect} from 'react-redux';
+
+
 
 const Character = props => {
   return <li>{props.character.name}</li>;
 };
 
-export default Character;
+export default connect()(Character);
