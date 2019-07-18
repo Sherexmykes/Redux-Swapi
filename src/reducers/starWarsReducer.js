@@ -9,7 +9,7 @@ export const charsReducer = (state = initialState, action) => {
   switch (action.type) {
     
     
-    case FETCHING: 
+ case FETCHING: 
     return Object.assign({}, state, {fetching: true, characters: [], error:""})
   case SUCCESS: 
     return {...state, fetching: false, characters: action.payload, error:""}
